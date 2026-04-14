@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About This Site</title>
+<link rel="stylesheet" href="SubStyles.css">
+<style>
+#more {display: none;}
+#home-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+</style>
+</head>
+<body>
+
+<h2>Information</h2>
+<p>
+  this website was made for educational purposes as a project for a computer science class.
+  <span id="dots">...</span>
+  <span id="more"> play games, learn about them, go on a scavanger hunt for codes, and most important, have fun! theres over a dozen codes, but only three actually do anything. good luck finding them!</span>
+</p>
+<button onclick="myFunction()" id="myBtn">Read more</button>
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+
+</body>
+</html>
+
+
+<a id="home-link" href="index.html">Home</a>
+
+
+
+<p> link to every single game that doesnt have a subpage because im too lazy to make 20 sub pages. some games may not even work and idk</p>
+
+<h2>Games</h2>
+<ul>
+  <a href="games/3Dflightsimulator.html">3D Flight Simulator</a>
+  <a href="games/backrooms.html">Backrooms</a>
+  <a href="games/blockysnakes.html">Blocky Snakes</a>
+  <a href="games/cookieclicker.html">Cookie Clicker</a>
+  <a href="games/noobminer.html">Noob Miner</a>
+  <a href="games/SpaceInvaders.html">Space Invaders</a>
+  <a href="games/thereisnog.html">There Is No Game</a>
+  <a href="games/geometrydash.html">Geometry Dash scratch</a>
+  <a href="games/ageofwar2.html">Age of War 2</a>
+</ul>
+
